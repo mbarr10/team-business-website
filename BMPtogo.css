@@ -33,3 +33,19 @@ li a.home {
     padding: 14px 16px;
     text-decoration: none;
 }
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    padding: none;
+    border: none;
+    display: block;
+}
+#about {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#about h2 {
+    text-align: center;
+}
