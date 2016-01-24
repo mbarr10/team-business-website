@@ -48,8 +48,13 @@ li a.home {
 }
 #about h2 {
     text-align: center;
-<<<<<<< HEAD
 }
-=======
+#descriptionpizza{
+    padding-top: 90px;
 }
->>>>>>> 504fcf393f25e601cad49e2992a0482281da3951
+#descriptionbeer {
+    padding-top: 40px;
+}
+#descriptionmovies {
+
+}
