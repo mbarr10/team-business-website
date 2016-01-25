@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="BMP 2 Go Pizza">
 	<title>Pizza | BMP 2 Go</title>
-	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/Javascript" src="BPMtogo.js"></script>
   	<!-- Latest compiled and minified CSS -->
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -24,78 +25,59 @@
 		  	<li class="nav"><a class="nav" href="beer.html">Beer</a></li>
 	</ul>
   <h1>PIZZA</h1>
+  <div id="buttons">
+    <button id="sp">Pizza Pics</button>
+    <button id="np">Reset</button>
+  </div>
 	<div class="container">
-		<div class="row">
+		<div class="row vertical-align">
 			<div class="col-lg-1"></div>
-    	<div class="col-lg-2 col-s-10"><img id="pizza" src="traditional.png"></div>
-  		<div class="col-lg-8 col-s-10"><p id="descriptionpizza"><strong>Traditional</strong> - Plain pizza w/ tomato sauce and mozzarella cheese <strong> $10</strong></p></div>
+    	<div class="col-lg-2 col-sm-10"><img class="pizza" src="traditional.png" alt="traditional pizza"></div>
+  		<div class="col-lg-3 col-sm-10"><p class="descriptionpizza"><strong>Traditional</strong> - Plain pizza w/ tomato sauce and mozzarella cheese <strong> $10</strong></p></div>
+      <div class="col-lg-2 col-sm-10"><img class="pizza" src="pepperoni.png" alt="perpperoni pizza"></div>
+      <div class="col-lg-3 col-sm-10"><p class="descriptionpizza"><strong>Pepperoni</strong> - Our traditional pie w/ pepperoni <strong> $12</strong></p></div>
 			<div class="col-lg-1"></div>
  		</div>
-    <div class="row">
-      <div class="col-lg-1"></div>
-      <div class="col-lg-2 col-s-10"><img id="pizza" src="pepperoni.png"></div>
-      <div class="col-lg-8 col-s-10"><p id="descriptionpizza"><strong>Pepperoni</strong> - Our traditional pie w/ pepperoni <strong> $12</strong></p></div>
-      <div class="col-lg-1"></div>
-    </div>
-  	<div class="row">
+  	<div class="row vertical-align">
 			<div class="col-lg-1"></div>
-      <div class="col-lg-2 col-s-10"><img id="pizza" src="tomatopie.jpg"></div>
-  		<div class="col-lg-8 col-s-10"><p id="descriptionpizza"><strong>Tomato Pie</strong> - Our traditional pie w/out the mozzarella, garnisheded w/ fresh basil<strong> </strong></p></div>
+      <div class="col-lg-2 col-sm-10"><img class="pizza" src="tomatopie.jpg" alt="tomato pie"></div>
+  		<div class="col-lg-3 col-sm-10"><p class="descriptionpizza"><strong>Tomato Pie</strong> - Our traditional pie w/out the mozzarella, garnisheded w/ fresh basil<strong> </strong></p></div>
+       <div class="col-lg-2 col-sm-10"><img class="pizza" src="sausage.jpg" alt="sausage pizza"></div>       
+      <div class="col-lg-3 col-sm-10"><p class="descriptionpizza"><strong>Sausage</strong> - Our traditional pie w/ hot Italian sausage <strong> $12</strong></p></div>
   		<div class="col-lg-1"></div>
   	</div>
-  	<div class="row">
-		  <div class="col-lg-1"></div>
-      <div class="col-lg-2 col-s-10"><img id="pizza" src="sausage.jpg"></div>  			
-      <div class="col-lg-8 col-s-10"><p id="descriptionpizza"><strong>Sausage</strong> - Our traditional pe w/ hot Italian sausage <strong> $12</strong></p></div>
-  		<div class="col-lg-1"></div>
-  	</div>
-		<div class="row">
+		<div class="row vertical-align">
  		  <div class="col-lg-1"></div>
-      <div class="col-lg-2 col-s-10"><img id="pizza" src="meatball.jpg"></div>
-  		<div class="col-lg-8 col-s-10"><p id="descriptionpizza"><strong>Meatball</strong> - Our traditional pie w/ our house-made famour Meatballs <strong> $12</strong></p></div>
+      <div class="col-lg-2 col-sm-10"><img class="pizza" src="meatball.jpg" alt="meatball pizza"></div>
+  		<div class="col-lg-3 col-sm-10"><p class="descriptionpizza"><strong>Meatball</strong> - Our traditional pie w/ our house-made famour Meatballs <strong> $12</strong></p></div>
+       <div class="col-lg-2 col-sm-10"><img class="pizza" src="veggie.png" alt="veggie pizza"></div>
+      <div class="col-lg-3 col-sm-10"><p class="descriptionpizza"><strong>Veggie</strong> - Our traditional pie w/ broccoli-rabe, sweet peppers, and onions <strong> $12</strong></p></div>
   	  <div class="col-lg-1"></div>
   	</div>
-  	<div class="row">
-			<div class="col-lg-1"></div>
-      <div class="col-lg-2 col-s-10"><img id="pizza" src="veggie.png"></div>
-  		<div class="col-lg-8 col-s-10"><p id="descriptionpizza"><strong>Veggie</strong> - Our traditional pie w/ broccoli-rabe, sweet peppers, and onions <strong> $12</strong></p></div>
-  		<div class="col-lg-1"></div>
-  	</div>
-  	<div class="row">
+  	<div class="row vertical-align">
 		  <div class="col-lg-1"></div>       
-      <div class="col-lg-2 col-s-10"><img id="pizza" src="meatlover.png"></div>
-  		<div class="col-lg-8 col-s-10"><p id="descriptionpizza"><strong>Meat Lovers</strong> - Our traditional pie w/ pepperoni, sausage, and meatballs <strong> $14</strong></p></div>
+      <div class="col-lg-2 col-sm-12"><img class="pizza" src="meatlover.png" alt="meatlover pizza"></div>
+  		<div class="col-lg-3 col-sm-12"><p class="descriptionpizza"><strong>Meat Lovers</strong> - Our traditional pie w/ pepperoni, sausage, and meatballs <strong> $14</strong></p></div>
+      <div class="col-lg-2 col-sm-12"><img class="pizza" src="white.jpg" alt="white pizza"></div>        
+      <div class="col-lg-3 col-sm-12"><p class="descriptionpizza"><strong>White</strong> - Mozzarella and Parmesean cheese with fresh chopped garlic <strong> $10</strong></p></div>
   		<div class="col-lg-1"></div>
 		</div>
-  	<div class="row">
-		  <div class="col-lg-1"></div>
-      <div class="col-lg-2 col-s-10"><img id="pizza" src="white.jpg"></div>  			
-      <div class="col-lg-8 col-s-10"><p id="descriptionpizza"><strong>White</strong> - Mozzarella and Parmesean cheese with fresh chopped garlic <strong> $10</strong></p></div>
-  		<div class="col-lg-1"></div>
-  	</div>
-  	<div class="row">
-			<div class="col-lg-1"></div>
-      <div class="col-lg-2 col-s-10"><img id="pizza" src="buffalo.png"></div>
-  		<div class="col-lg-8 col-s-10"><p id="descriptionpizza"><strong>Buffalo Chicken</strong> - Our white pizza w/ grilled chicken, covered in a buffalo ranch dressing <strong> $14</strong></p></div>
-  		<div class="col-lg-1"></div>
-  	</div>
-  	<div class="row">
-		  <div class="col-lg-1"></div>
-      <div class="col-lg-2 col-s-10"><img id="pizza" src="bbq.png"></div>
-  		<div class="col-lg-8 col-s-10"><p id="descriptionpizza"><strong>BBQ Chicken</strong> - Our white pizza w/ grilled chicken, covered in our house made BBQ sauce <strong> $14</strong></p></div>
-  		<div class="col-lg-1"></div>
-  	</div>
-		<div class="row">
-		  <div class="col-lg-1"></div>
-      <div class="col-lg-2 col-s-10"><img id="pizza" src="southphilly.jpg"></div>
-			<div class="col-lg-8 col-s-10"><p id="descriptionpizza"><strong>South Philly</strong> - Our Traditional pie w/ hot Italian sausage, pepperoni, and hot peppers <strong> $14</strong></p></div>
-  	  <div class="col-lg-1"></div>
-  	</div>
-  	<div class="row">
-		  <div class="col-lg-1"></div>
-      <div class="col-lg-2 col-s-10"><img id="pizza" src="tws.png"></div>
-			<div class="col-lg-8 col-s-10"><p id="descriptionpizza"><strong>The Whole Salami</strong> - Our traditional pie loaded with every topping that we carry (Eat at your own risk) <strong> $18</strong></p></div>
-  		<div class="col-lg-1"></div>
+    <div class="row vertical-align">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-2 col-sm-10"><img class="pizza" src="buffalo.png" alt="buffalor pizza"></div>
+      <div class="col-lg-3 col-sm-10"><p class="descriptionpizza"><strong>Buffalo Chicken</strong> - Our white pizza w/ grilled chicken, covered in a buffalo ranch dressing <strong> $14</strong></p></div>
+       <div class="col-lg-2 col-sm-10"><img class="pizza" src="bbq.png" alt="bbq chicken"></div>
+      <div class="col-lg-3 col-sm-10"><p class="descriptionpizza"><strong>BBQ Chicken</strong> - Our white pizza w/ grilled chicken, covered in our house made BBQ sauce <strong> $14</strong></p></div>
+      <div class="col-lg-1"></div>
+    </div>
+       <div class="row vertical-align">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-2 col-sm-10"><img class="pizza" src="southphilly.jpg" alt="south philly pizza"></div>
+      <div class="col-lg-3 col-sm-10"><p class="descriptionpizza"><strong>South Philly</strong> - Our Traditional pie w/ hot Italian sausage, pepperoni, and hot peppers <strong> $14</strong></p></div>
+       <div class="col-lg-2 col-sm-10"><img class="pizza" src="tws.png" alt="the whole salami"></div>
+      <div class="col-lg-3 col-sm-10"><p class="descriptionpizza"><strong>The Whole Salami</strong><br> - Our traditional pie loaded with every topping that we carry (Eat at your own risk) <strong> $18</strong></p></div>
+      <div class="col-lg-1"></div>
+    </div>
 		</div>
 	</div>
 </body>

@@ -52,9 +52,10 @@ li a.home {
 #about h2 {
     text-align: center;
 }
-#descriptionpizza{
-    padding-top: 90px;
+.descriptionpizza{
+    border-bottom: 3px dotted black;
 }
+
 #descriptionbeer {
     padding-top: 40px;
 }
@@ -65,11 +66,44 @@ li a.home {
     margin-right: auto;
     margin-left: auto;
 }
-#pizza {
+.pizza {
     margin-right: auto;
     margin-left: auto;
+    display: none;
 }
 #movies {
     margin-right: auto;
     margin-left: auto;
+}
+
+#buttons {
+    padding-top: 10px;
+   text-align: center;
+}
+
+button {
+    margin: 5px;
+}
+.row {
+    padding: 0;
+}
+.col-lg-2 {
+    text-align: center;
+}
+.col-lg-3 {
+    text-align: left;
+}
+
+@media (max-width: 767px) { 
+    .row.vertical-align {
+        display: block; /* turn off the flexible box layout */
+    }
+}
+
+@media (min-width: 768px) { 
+    .row.vertical-align {
+        display: flex;
+        align-items: center;
+        padding-top: 15px;
+    }
 }
