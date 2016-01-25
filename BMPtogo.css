@@ -10,6 +10,9 @@ li.nav {
     float: right;
 }
 
+h1 {
+    text-align: center;
+}
 li a.nav {
     display: block;
     color: white;
@@ -56,5 +59,17 @@ li a.home {
     padding-top: 40px;
 }
 #descriptionmovies {
-
+    padding-top: 100px;
+}
+#beer {
+    margin-right: auto;
+    margin-left: auto;
+}
+#pizza {
+    margin-right: auto;
+    margin-left: auto;
+}
+#movies {
+    margin-right: auto;
+    margin-left: auto;
 }
