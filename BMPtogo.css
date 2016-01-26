@@ -5,11 +5,9 @@ ul.nav {
     overflow: hidden;
     background-color: #333;
 }
-
 li.nav {
     float: right;
 }
-
 h1 {
     text-align: center;
 }
@@ -20,15 +18,12 @@ li a.nav {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 li a:hover:not(.active) {
     background-color: #ff0000;
 }
-
 li.home {
     float: left;
 }
-
 li a.home {
     display: block;
     color: white;
@@ -49,9 +44,9 @@ li a.home {
     padding-left: 20%;
     padding-right: 20%;
 }
-#about h2 {
-    text-align: center;
-}
+    #about h2 {
+        text-align: center;
+    }
 .descriptionpizza{
     border-bottom: 3px dotted black;
 }
@@ -78,11 +73,55 @@ li a.home {
     display: none;
 }
 
-#buttons {
+.buttons {
     padding-top: 10px;
-   text-align: center;
+    text-align: center;
 }
-
+#sp {
+    background: #65a9d7;
+    border-radius: 8px;
+    color: white;
+    font-family: Georgia, serif;
+    vertical-align: middle;
+}
+    .button:hover {
+    background: #28597a;
+    color: #ccc;
+    }
+    .button:active {
+    border-top-color: #1b435e;
+    background: #1b435e;
+    }
+#sb {
+    background: #65a9d7;
+    border-radius: 8px;
+    color: white;
+    font-family: Georgia, serif;
+    vertical-align: middle;
+}
+    .button:hover {
+    background: #28597a;
+    color: #ccc;
+    }
+    .button:active {
+    border-top-color: #1b435e;
+    background: #1b435e;
+    }
+#sm {
+    background: #65a9d7;
+    border-radius: 8px;
+    color: white;
+    font-family: Georgia, serif;
+    vertical-align: middle;
+}
+    .button:hover {
+    background: #28597a;
+    color: #ccc;
+    }
+    .button:active {
+    border-top-color: #1b435e;
+    background: #1b435e;
+    }
 button {
     margin: 5px;
 }
@@ -95,13 +134,14 @@ button {
 .col-lg-3 {
     text-align: left;
 }
-
 @media (max-width: 767px) { 
     .row.vertical-align {
         display: block; /* turn off the flexible box layout */
     }
+    .logo {
+        width: 250px;
+    }
 }
-
 @media (min-width: 768px) { 
     .row.vertical-align {
         display: flex;
