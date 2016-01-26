@@ -56,24 +56,26 @@ li a.home {
     border-bottom: 3px dotted black;
 }
 
-#descriptionbeer {
-    padding-top: 40px;
+.descriptionbeer {
+    border-bottom: 3px dotted black;
 }
-#descriptionmovies {
-    padding-top: 100px;
+.descriptionmovies {
+    border-bottom: 3px dotted black;
 }
-#beer {
+.beer {
     margin-right: auto;
     margin-left: auto;
+    display: none;
 }
 .pizza {
     margin-right: auto;
     margin-left: auto;
     display: none;
 }
-#movies {
+.movies {
     margin-right: auto;
     margin-left: auto;
+    display: none;
 }
 
 #buttons {

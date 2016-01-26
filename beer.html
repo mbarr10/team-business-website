@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="BMP 2 Go Philadelphia">
 	<title>Beer | BMP 2 Go</title>
-	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+	 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script type="text/Javascript" src="BPMtogo.js"></script>
   	<!-- Latest compiled and minified CSS -->
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -24,77 +25,57 @@
 	  	<li class="nav"><a class="nav" href="beer.html">Beer</a></li>
 	</ul>
   <h1>BEER</h1>
+   <div id="buttons">
+    <button id="sb">Beer Lable Pics</button>
+    <button id="nb">Reset</button>
+  </div>
 	<div class="container">
-		<div class="row">
+		<div class="row vertical-align">
 			<div class="col-lg-1"></div>
-    	<div class="col-lg-2 col-s-10"><img id="beer" src="pale_ale.png"></div>
-  		<div class="col-lg-8 col-s-10"><p id="descriptionbeer"><strong>Philadelphia Pale Ale:</strong> Dry hopped with an abundance of distinctive Simcoe hops, this straw colored pale ale is more drinkable than bitter, more aromatic than aggressive Philly Pale, as it’s better known, is crisp, hoppy, and bursting with citrus.<strong> $6</strong></p></div>
+    	<div class="col-lg-2 col-s-10"><img class="beer" src="pale_ale.png"></div>
+  		<div class="col-lg-8 col-s-10"><p class="descriptionbeer"><strong>Philadelphia Pale Ale:</strong> Dry hopped with an abundance of distinctive Simcoe hops, this straw colored pale ale is more drinkable than bitter, more aromatic than aggressive Philly Pale, as it’s better known, is crisp, hoppy, and bursting with citrus.<strong> $6</strong></p></div>
   		<div class="col-lg-1"></div>
   	</div>
-  	<div class="row">
+  	<div class="row vertical-align">
 		  <div class="col-lg-1"></div>
-     	<div class="col-lg-2 col-s-10"><img id="beer" src="brawler.png"></div>
-  		<div class="col-lg-8 col-s-10"><p id="descriptionbeer"><strong>Brawler:</strong> Its smooth character, hints of caramel and toast, and remarkable drinkability define this ruby-colored brew as a true session ale. Perfect for when you want to go a few rounds.<strong> $6</strong></p></div>
+     	<div class="col-lg-2 col-s-10"><img class="beer" src="brawler.png"></div>
+  		<div class="col-lg-8 col-s-10"><p class="descriptionbeer"><strong>Brawler:</strong> Its smooth character, hints of caramel and toast, and remarkable drinkability define this ruby-colored brew as a true session ale. Perfect for when you want to go a few rounds.<strong> $6</strong></p></div>
   		<div class="col-lg-1"></div>
   	</div>
-  	<div class="row">
+  	<div class="row vertical-align">
 			<div class="col-lg-1"></div>     	
-      <div class="col-lg-2 col-s-10"><img id="beer" src="ipa.png"></div>
-  		<div class="col-lg-8 col-s-10"><p id="descriptionbeer"><strong>IPA:</strong> An insistent malt character from traditional floor-malted English barley harmonizes with a generous amount of Chinook and Amarillo hops. Fruity and aromatic, our IPA is perfectly balanced.<strong> $7</strong></p></div>
+      <div class="col-lg-2 col-s-10"><img class="beer" src="ipa.png"></div>
+  		<div class="col-lg-8 col-s-10"><p class="descriptionbeer"><strong>IPA:</strong> An insistent malt character from traditional floor-malted English barley harmonizes with a generous amount of Chinook and Amarillo hops. Fruity and aromatic, our IPA is perfectly balanced.<strong> $7</strong></p></div>
   		<div class="col-lg-1"></div>
   	</div>
-		<div class="row">
+		<div class="row vertical-align">
 			<div class="col-lg-1"></div>
-    	<div class="col-lg-2 col-s-10"><img id="beer" src="love_stout.png"></div>
-			<div class="col-lg-8 col-s-10"><p id="descriptionbeer"><strong>Love Stout:</strong> Luscious notes of coffee and chocolate accent the smooth, creamy mouth feel. We will not apologize for any amorous affairs resulting from the consumption of this beverage.<strong> $7</strong></p></div>
+    	<div class="col-lg-2 col-s-10"><img class="beer" src="love_stout.png"></div>
+			<div class="col-lg-8 col-s-10"><p class="descriptionbeer"><strong>Love Stout:</strong> Luscious notes of coffee and chocolate accent the smooth, creamy mouth feel. We will not apologize for any amorous affairs resulting from the consumption of this beverage.<strong> $7</strong></p></div>
   		<div class="col-lg-1"></div>
   	</div>
-		<div class="row">
+		<div class="row vertical-align">
 			<div class="col-lg-1"></div>
-    	<div class="col-lg-2 col-s-10"><img id="beer" src="esa.png"></div>
-  		<div class="col-lg-8 col-s-10"><p id="descriptionbeer"><strong>ESA:</strong> East Kent Golding hops give this English style ale a subtle spiciness, which compliments its strong malt backbone. Hints of chocolate and caramel round out this deep chestnut colored ale. Floral, earthy, smooth.<strong> $7</strong></p></div>
+    	<div class="col-lg-2 col-s-10"><img class="beer" src="esa.png"></div>
+  		<div class="col-lg-8 col-s-10"><p class="descriptionbeer"><strong>ESA:</strong> East Kent Golding hops give this English style ale a subtle spiciness, which compliments its strong malt backbone. Hints of chocolate and caramel round out this deep chestnut colored ale. Floral, earthy, smooth.<strong> $7</strong></p></div>
   		<div class="col-lg-1"></div>
   	</div>
-  	<div class="row">
+  	<div class="row vertical-align">
 			<div class="col-lg-1"></div>
-    	<div class="col-lg-2 col-s-10"><img id="beer" src="tjta.png"></div>
-  		<div class="col-lg-8 col-s-10"><p id="descriptionbeer"><strong>Tavern Ale:</strong> This powerful and complex golden ale pays homage to Founding Father and fellow brewer, Thomas Jefferson. Yards Brewmaster, Tom Kehoe, worked closely with Philadelphia’s historic City Tavern to recreate this recipe, employing honey, rye and wheat, just like the beer Jefferson made at Monticello.<strong> $7</strong></p></div>
+    	<div class="col-lg-2 col-s-10"><img class="beer" src="tjta.png"></div>
+  		<div class="col-lg-8 col-s-10"><p class="descriptionbeer"><strong>Tavern Ale:</strong> This powerful and complex golden ale pays homage to Founding Father and fellow brewer, Thomas Jefferson. Yards Brewmaster, Tom Kehoe, worked closely with Philadelphia’s historic City Tavern to recreate this recipe, employing honey, rye and wheat, just like the beer Jefferson made at Monticello.<strong> $7</strong></p></div>
   	  <div class="col-lg-1"></div>
   	</div>
-  	<div class="row">
+  	<div class="row vertical-align">
 			<div class="col-lg-1"></div>
-    	<div class="col-lg-2 col-s-10"><img id="beer" src="prts.png"></div>
-  		<div class="col-lg-8 col-s-10"><p id="descriptionbeer"><strong>Tavern Spruce:</strong> Based on Franklin’s original recipe, which called for barley, molasses, and essence of spruce, our Tavern Spruce is as approachable and engaging as was the man himself. We source blue spruce clippings from a local organic farmer, steeping them in the kettle to create this one-of-a-kind deep amber ale.<strong> $8</strong></p></div>
+    	<div class="col-lg-2 col-s-10"><img class="beer" src="prts.png"></div>
+  		<div class="col-lg-8 col-s-10"><p class="descriptionbeer"><strong>Tavern Spruce:</strong> Based on Franklin’s original recipe, which called for barley, molasses, and essence of spruce, our Tavern Spruce is as approachable and engaging as was the man himself. We source blue spruce clippings from a local organic farmer, steeping them in the kettle to create this one-of-a-kind deep amber ale.<strong> $8</strong></p></div>
   		<div class="col-lg-1"></div>
   	</div>
-  	<div class="row">
+  	<div class="row vertical-align">
 			<div class="col-lg-1"></div>
-    	<div class="col-lg-2 col-s-10"><img id="beer" src="gwtp.png"></div>
-  		<div class="col-lg-8 col-s-10"><p id="descriptionbeer"><strong>Tavern Porter:</strong> Detailed in a letter from the General to his officers during the war, Washington’s recipe employed molasses to aid fermentation and give rich caramel notes to this robust, roasty ale. The recipe reflected his admiration for Philadelphia-style porters, especially those brewed by Robert Hare (whose original brewery stood just blocks from where ours is now). Our Tavern Porter, inspired by Washington’s, is dark, smooth, and complex with just a hint of dried fruit in the finish.<strong> $8</strong></p></div>
-  		<div class="col-lg-1"></div>
-  	</div>
-  	<div class="row">
-			<div class="col-lg-1"></div>
-     	<div class="col-lg-2 col-s-10"><img id="beer" src=" "></div>
-  		<div class="col-lg-8 col-s-10"><p id="descriptionbeer"><strong> </strong> <strong> </strong></p></div>
-  		<div class="col-lg-1"></div>
-  	</div>
-  	<div class="row">
-			<div class="col-lg-1"></div>
-     	<div class="col-lg-2 col-s-10"><img id="beer" src=" "></div>
-  		<div class="col-lg-8 col-s-10"><p id="descriptionbeer"><strong> </strong> <strong> </strong></p></div>
-  		<div class="col-lg-1"></div>
-  	</div>
-  	<div class="row">
-			<div class="col-lg-1"></div>
-    	<div class="col-lg-2 col-s-10"><img id="beer" src=" "></div>
-  		<div class="col-lg-8 col-s-10"><p id="descriptionbeer"><strong> </strong> <strong> </strong></p></div>
-  		<div class="col-lg-1"></div>
-  	</div>
-		<div class="row">
-			<div class="col-lg-1"></div>
-    	<div class="col-lg-2 col-s-10"><img id="beer" src=" "></div>
-			<div class="col-lg-8 col-s-10"><p id="descriptionbeer"><strong> </strong> <strong> </strong></p></div>
+    	<div class="col-lg-2 col-s-10"><img class="beer" src="gwtp.png"></div>
+  		<div class="col-lg-8 col-s-10"><p class="descriptionbeer"><strong>Tavern Porter:</strong> Detailed in a letter from the General to his officers during the war, Washington’s recipe employed molasses to aid fermentation and give rich caramel notes to this robust, roasty ale. The recipe reflected his admiration for Philadelphia-style porters, especially those brewed by Robert Hare (whose original brewery stood just blocks from where ours is now). Our Tavern Porter, inspired by Washington’s, is dark, smooth, and complex with just a hint of dried fruit in the finish.<strong> $8</strong></p></div>
   		<div class="col-lg-1"></div>
   	</div>
 	</div>
