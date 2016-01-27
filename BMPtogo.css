@@ -51,14 +51,14 @@ li a.home {
 .descriptionpizza{
     text-align: center;
     padding-bottom: 25px;
-
 }
-
 .descriptionbeer {
     padding-top: 30px;
 }
 .descriptionmovies {
+    text-align: center !important;
     padding-bottom: 25px;
+    margin-top: 20px;
 }
 .beer {
     display: none;
@@ -72,6 +72,8 @@ li a.home {
     display: none;
     float: left;
     margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 .buttons {
@@ -132,4 +134,35 @@ button {
 .col-lg-4 {
     text-align: center;
 }
+.col-lg-5 {
+    text-align: center;
+}
+.col-md-10 {
+    text-align: center;
+}
+@media all and (max-width: 992px){
+    .movies {
+        float: none;
+        margin-right: auto;
+        margin-left: auto;
+        display: block !important;
+    }
+    .descriptionmovies {
+        text-align: center;
+        padding-bottom: 30px;
+        margin-top: 5px;
+}
+
+}
+@media all and (max-width: 560px){
+    .beer {
+        float: none;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        display: block !important;
+    }
+    .descriptionbeer {
+        text-align: center;
+    }
 }
