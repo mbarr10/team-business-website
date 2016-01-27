@@ -37,6 +37,7 @@ li a.home {
     padding: none;
     border: none;
     display: block;
+    width: 500px;
 }
 #about {
     margin-right: auto;
@@ -49,28 +50,27 @@ li a.home {
     }
 .descriptionpizza{
     border-bottom: 3px dotted black;
+    text-align: left;
+
 }
 
 .descriptionbeer {
     border-bottom: 3px dotted black;
+    text-align: left;
+
 }
 .descriptionmovies {
     border-bottom: 3px dotted black;
 }
 .beer {
-    margin-right: auto;
-    margin-left: auto;
     display: none;
 }
 .pizza {
-    margin-right: auto;
-    margin-left: auto;
     display: none;
 }
 .movies {
-    margin-right: auto;
-    margin-left: auto;
     display: none;
+    float: left;
 }
 
 .buttons {
@@ -128,12 +128,9 @@ button {
 .row {
     padding: 0;
 }
-.col-lg-2 {
-    text-align: center;
+.col-lg-10 {
 }
-.col-lg-3 {
-    text-align: left;
-}
+
 @media (max-width: 767px) { 
     .row.vertical-align {
         display: block; /* turn off the flexible box layout */
