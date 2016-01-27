@@ -49,18 +49,16 @@ li a.home {
         text-align: center;
     }
 .descriptionpizza{
-    border-bottom: 3px dotted black;
-    text-align: left;
+    text-align: center;
+    padding-bottom: 25px;
 
 }
 
 .descriptionbeer {
-    border-bottom: 3px dotted black;
-    text-align: left;
+
 
 }
 .descriptionmovies {
-    border-bottom: 3px dotted black;
 }
 .beer {
     display: none;
@@ -71,6 +69,7 @@ li a.home {
 .movies {
     display: none;
     float: left;
+    margin-right: 20px;
 }
 
 .buttons {
@@ -128,7 +127,9 @@ button {
 .row {
     padding: 0;
 }
-.col-lg-10 {
+.col-lg-4 {
+    text-align: center;
+}
 }
 
 @media (max-width: 767px) { 
