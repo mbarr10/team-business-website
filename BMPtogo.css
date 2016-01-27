@@ -55,13 +55,15 @@ li a.home {
 }
 
 .descriptionbeer {
-
-
+    padding-top: 30px;
 }
 .descriptionmovies {
+    padding-bottom: 25px;
 }
 .beer {
     display: none;
+    float: left;
+    margin-right: 20px;
 }
 .pizza {
     display: none;
@@ -130,20 +132,4 @@ button {
 .col-lg-4 {
     text-align: center;
 }
-}
-
-@media (max-width: 767px) { 
-    .row.vertical-align {
-        display: block; /* turn off the flexible box layout */
-    }
-    .logo {
-        width: 250px;
-    }
-}
-@media (min-width: 768px) { 
-    .row.vertical-align {
-        display: flex;
-        align-items: center;
-        padding-top: 15px;
-    }
 }
