@@ -37,4 +37,23 @@ $(document).ready(function(){
 		})
 	},2500);
 });
+//pizza alert
+$(document).ready(function(){
+	$(".pizzaCart").click( function() { 
+		alert("Pizza Added to Cart");
+	});
+});
+//beer alert
+$(document).ready(function(){
+	$(".beerCart").click( function() { 
+		alert("Beer Added to Cart");
+	});
+});
+//movie alert
+$(document).ready(function(){
+	$(".movieCart").click( function() { 
+		alert("Movie Added to Cart");
+	});
+});
+
 
