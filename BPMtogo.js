@@ -1,4 +1,3 @@
-
 //pizza picture slider
 $(document).ready(function(){
 	$("#seePizza").click(function(){
