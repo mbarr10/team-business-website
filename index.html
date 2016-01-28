@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="BMP 2 Go Philadelphia">
 	<title>BMP 2 Go</title>
-	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  	<script type="text/Javascript" src="BPMtogo.js"></script>
   	<!-- Latest compiled and minified CSS -->
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -24,10 +25,33 @@
 	  	<li class="nav"><a class="nav" href="beer.html">Beer</a></li>
 	</ul>
 	<div class="logo">
-      	<img class="logo" src="BMPlogo.png">
+      	<div id="carousel">
+		<ul>
+			<li><img src="bmplogo.png" alt="BMP Logo"></li>
+			<li><img src="beerslider.png" alt="Yards Beers"></li>
+			<li><img src="bmplogo.png" alt="BMP Logo"></li>
+			<li><img src="movieheader.png" alt="Movie collage"></li>
+			<li><img src="bmplogo.png" alt="BMP Logo"></li>
+			<li><img src="ppsp.png" alt="Pizzas"></li>
+		</ul>
+	</div>
     </div>
     <br>
     <br>
-    <div id="about"><h2>About BMP 2go:</h2> Created by two lazy gentlemen who were tired of going to three different locations in order to Netflix and chill. At <i>BMP 2go</i>, you can get everything you need for a fun night in. Beer, Movies, and Pizza. Is there a more perfect combination?</div>
+    <div class="container">
+		<div class="row">
+    		<div class="col-lg-12"><h1>About BMP 2go:</h1></div>
+    	</div>
+    	<div class="row">
+	    	<div class="col-lg-2"></div>
+	    	<div id="about" class="col-lg-8">Created by two lazy gentlemen who were tired of going to three different locations in order to Netflix and chill. At BMP 2go, you can get everything you need for a fun night in. Beer, Movies, and Pizza. Is there a more perfect combination?</div>
+	    	<div class="col-lg-2"></div>
+	    </div>
+	    <br>
+	    <br>
+		<div class="row">
+      		<div class="col-lg-12" id="footer">Beer Movie Pizza to go © 2016</div>
+    	</div>
+	</div>
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 ul.nav {
     list-style-type: none;
     margin: 0;
@@ -8,21 +9,20 @@ ul.nav {
 li.nav {
     float: right;
 }
-h1 {
-    text-align: center;
-}
 li a.nav {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 20px
 }
 li a:hover:not(.active) {
     background-color: #ff0000;
 }
 li.home {
     float: left;
+    font-size: 20px;
 }
 li a.home {
     display: block;
@@ -31,103 +31,130 @@ li a.home {
     padding: 14px 16px;
     text-decoration: none;
 }
+
+
+#carousel {
+    width: 480px;
+    height: 280px;
+    overflow:hidden;
+}
+
+#carousel ul {
+    width: 1920px;
+    padding: 0;
+    margin: 0;
+}
+
+#carousel ul li {
+    width:480px;
+    text-align: center;
+    height: 280px;
+    list-style: none;
+    float:  left;
+}
+
 .logo {
     margin-left: auto;
     margin-right: auto;
-    padding: none;
+    padding-top: 30px;
     border: none;
     display: block;
     width: 500px;
 }
-#about {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 20%;
-    padding-right: 20%;
+h1 {
+    text-align: center;
+    font-size: 40px;
 }
-    #about h2 {
-        text-align: center;
-    }
+#about {
+    text-align: center;
+}
+
 .descriptionpizza{
     text-align: center;
     padding-bottom: 25px;
 }
-.descriptionbeer {
-    padding-top: 30px;
-}
-.descriptionmovies {
-    text-align: center !important;
-    padding-bottom: 25px;
-    margin-top: 20px;
-}
-.beer {
-    display: none;
-    float: left;
-    margin-right: 20px;
-}
 .pizza {
     display: none;
 }
-.movies {
+#seePizza, #resetPizza {
+    background: #65a9d7;
+    border-radius: 8px;
+    color: white;
+    font-family: Georgia, serif;
+    vertical-align: middle;
+}
+
+.descriptionbeer {
+    text-align: center;
+    padding-top: 10px;
+}
+.beer {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
     display: none;
-    float: left;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: 20px;
+}
+#seeBeer, #resetBeer {
+    background: #65a9d7;
+    border-radius: 8px;
+    color: white;
+    font-family: Georgia, serif;
+    vertical-align: middle;
+}
+
+.movies {
+        float: none;
+        margin-right: auto;
+        margin-left: auto;
+        display: none;
+    }
+.descriptionmovies {
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: 5px;
+}
+#seeMovies, #resetMovies {
+    background: #65a9d7;
+    border-radius: 8px;
+    color: white;
+    font-family: Georgia, serif;
+    vertical-align: middle;
 }
 
 .buttons {
-    padding-top: 10px;
     text-align: center;
+    padding-bottom: 20px;
 }
-#sp {
-    background: #65a9d7;
-    border-radius: 8px;
-    color: white;
-    font-family: Georgia, serif;
-    vertical-align: middle;
-}
-    .button:hover {
+
+.button:hover {
     background: #28597a;
     color: #ccc;
-    }
-    .button:active {
+}
+.button:active {
     border-top-color: #1b435e;
     background: #1b435e;
-    }
-#sb {
-    background: #65a9d7;
-    border-radius: 8px;
-    color: white;
-    font-family: Georgia, serif;
-    vertical-align: middle;
 }
-    .button:hover {
+
+.button:hover {
     background: #28597a;
     color: #ccc;
-    }
-    .button:active {
+}
+.button:active {
     border-top-color: #1b435e;
     background: #1b435e;
-    }
-#sm {
-    background: #65a9d7;
-    border-radius: 8px;
-    color: white;
-    font-family: Georgia, serif;
-    vertical-align: middle;
 }
-    .button:hover {
+.button:hover {
     background: #28597a;
     color: #ccc;
-    }
-    .button:active {
+}
+.button:active {
     border-top-color: #1b435e;
     background: #1b435e;
-    }
+}
 button {
     margin: 5px;
 }
+
 .row {
     padding: 0;
 }
@@ -137,32 +164,9 @@ button {
 .col-lg-5 {
     text-align: center;
 }
-.col-md-10 {
-    text-align: center;
-}
-@media all and (max-width: 992px){
-    .movies {
-        float: none;
-        margin-right: auto;
-        margin-left: auto;
-        display: block !important;
-    }
-    .descriptionmovies {
-        text-align: center;
-        padding-bottom: 30px;
-        margin-top: 5px;
+
+#footer {
+    color: #bababa
 }
 
-}
-@media all and (max-width: 560px){
-    .beer {
-        float: none;
-        margin-right: auto;
-        margin-left: auto;
-        text-align: center;
-        display: block !important;
-    }
-    .descriptionbeer {
-        text-align: center;
-    }
-}
+
